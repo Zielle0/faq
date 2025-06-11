@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fortify</title>
+        <link rel="icon" type="image/png" href="logo.png">
+        <link href="faq.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header class="header">
+            <img src="logo.png">
+            <h1>Fortify</h1>
+        </header>
+        <div class="top">
+            <h1>FAQ</h1>
+            <h2>Popular Questions</h2>
+        </div>
+        <div class="container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    What does the plugin do? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    The plugin scans websites and downloadable files in real-time to detect potential malware or harmful content using a deep-learning based detection system.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    How does it detect malware? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    It uses a trained One Dimensional Convolutional Neural Network (1D-CNN) model that analyzes patterns in websites and files to determine whether they are safe or malicious.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    Does it block downloads or websites automatically? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    No. The plugin alerts you if a file or site appears suspicious. You can then choose to proceed or cancel the action based on the risk warning.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    What type of files can the plugin scan? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    Currently, it focuses on executable files (like .exe, .dll) and files with Portable Executable (PE) headers, which are common targets for malware.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    Will this plugin slow down my browsing? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    No. The plugin is optimized to work in the background with minimal performance impact, scanning only when necessary.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    Is my data sent to any server? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    No personal data is collected. Only essential file or URL metadata is temporarily processed for malware analysis and is not stored.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    What should I do if a safe file is flagged as malicious? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    This is called a false positive. You can report it through the feedback form, and it will help improve future model training.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    Can I disable the plugin temporarily? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    Yes. There is an option in the plugin settings to pause or disable malware scanning when needed.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    Is this plugin free to use? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, the plugin is completely free for personal use.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    What if the scanning does not start automatically? <span class="arrow">&#9660;</span>
+                </div>
+                <div class="faq-answer">
+                    You can manually start the scan by clicking the <strong>Scan</strong> button. If it still doesn’t work, check that the plugin is enabled and refresh the page.
+                </div>
+            </div>
+        </div>
+        <script src="faq.js"></script>
+    </body>
+</html>
